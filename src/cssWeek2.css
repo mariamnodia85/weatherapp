@@ -31,7 +31,6 @@ footer {
 header {
   color: #150e90;
   font-family: "Redressed", cursive;
-  padding: 10px 20px;
   font-size: 4pc;
   display: block;
 }
@@ -70,8 +69,9 @@ h3 {
 }
 
 img {
-  width: 200px;
-  margin-left: 180px;
+  width: 150px;
+  margin-left: 10px;
+  margin-left: 1, 5pc;
 }
 
 .plus {
@@ -92,4 +92,20 @@ img {
 
 #celsiusId {
   color: black;
+}
+
+#quote {
+  color: #150e90;
+  font-family: "Redressed", cursive;
+  padding: 10px 20px;
+  font-size: 20px;
+  display: block;
+}
+
+#time {
+  color: #150e90;
+  font-family: "Redressed", cursive;
+  padding: 10px 20px;
+  font-size: 25px;
+  display: block;
 }
