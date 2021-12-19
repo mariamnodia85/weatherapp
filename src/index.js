@@ -33,6 +33,7 @@ function showCurrentLocation(event) {
 let currentLocationButton = document.querySelector("#currentLocationButton");
 currentLocationButton.addEventListener("click", showCurrentLocation);
 
+let iconElement=document.querySelector("#icon1")
 
 function showWeather(response) {
   console.log(response.data);
@@ -40,6 +41,8 @@ function showWeather(response) {
   document.querySelector("#temperatureId").innerHTML = Math.round(response.data.main.temp);
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
+  iconElement.setAttribute("src", `http://openweathermap.org/img/wn${response.data.weather[0]icon} "2x.png`);
+iconElement.setAttribute("alt", response.data.weather[0].description);
 
 }
 function search(event) {
